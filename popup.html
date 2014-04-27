@@ -6,21 +6,18 @@
 
 			body {
 				margin: 0;
-				width: 300px;
+				width: 320px;
 				height: 600px;
-				font-size: 62.5%;
-			}
-
-			nav {
-				display: inline;
-
+				font-size: 75%;
 			}
 
 			.tab {
 				width: 50%;
+				height: 50px;
 				float: left;
 				text-align: center;
 				background-color: grey;
+				margin-bottom: 15px;
 			}
 
 			.tab a {
@@ -43,155 +40,135 @@
 			}
 
 			article {
-				/*padding: 60px 15 10 15;*/
-				padding-top: 60px;
-				position: absolute;
-				top: 0px;
-				visibility: collapse;
-				z-index: -1;
-
+				margin: 15px;
 			}
 
-			article:target {
-				visibility: visible;
+			pre {
+				background-color: #f8f8f8;
+				border: 1px solid #ddd;
+				padding: 5px 10px;
+				border-radius: 3px;
+			}
+			pre p {
+				margin: 0;
 			}
 
 		</style>
 	</head>
 	<body>
 		
-		<div class="tabs">
-			<nav>
-				<div class="tab">
-					<h1><a href="#markdown">Markdown</a></h1>
-				</div>
-				<div class="tab">
-					<h1><a href="#github">Github</a></h1>
-				</div>
-			</nav>
+			<div class="tab">
+				<h1><a href="#markdown">Markdown</a></h1>
+			</div>
+			<div class="tab">
+				<h1><a href="#github">Github</a></h1>
+			</div>
 			<article id="markdown">
 				<section>
 					<h2>Headings</h2>
-					<p># This is an H1</p>
-					<p>## This is an H2</p>
-					<p>### This is an H3</p>
-					<p>#### This is an H4</p>
-					<p>##### This is an H5</p>
-					<p>###### This is an H6</p>
+					<pre><code>
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+					</code></pre>
+				</section>
+				<section>
+					<h2>Italics</h2>
+					<pre><code>
+*Italicised*
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+_Italicised_
+					</code></pre>
+				</section>
+				<section>
+					<h2>Bold</h2>
+					<pre><code>
+**Bold**
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+__Bold__
+					</code></pre>
 				</section>
 				<section>
 					<h2>Blockquotes</h2>
-					<p>> This is a block quote.</p>
-					<p>>> This is a nested block quote.</p>
+					<pre><code>
+> This is a block quote.
+>> This is a nested block quote.
+					</code></pre>
 				</section>
 				<section>
-					<h2>Lists</h2>
-					<h3>Unordered</h3>
-					<p>* Red</p>
-					<p>* Blue</p>
-					<p>* Green</p>
-					<p>+ Red</p>
-					<p>+ Blue</p>
-					<p>+ Green</p>
-					<p>- Red</p>
-					<p>- Blue</p>
-					<p>- Green</p>
-					<h3>Ordered</h3>
-					<p>1. Led Zeppelin</p>
-					<p>2. Led Zeppelin II</p>
-					<p>3. Led Zeppelin III</p>
-					<p>4. Led Zeppelin IV</p>
+					<h2>Unordered Lists</h2>
+					<pre><code>
+* Gibson
+* Fender
+  * Stratocaster
+  * Telecaster
+					</code></pre>
+					<p>or</p>
+					<pre><code>
++ Gibson
++ Fender
+  + Stratocaster
+  + Telecaster
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+- Gibson
+- Fender
+  - Stratocaster
+  - Telecaster
+					</code></pre>
 				</section>
 				<section>
-					<h2>Code</h2>
-					<h3>Code block</h3>
-					<p>    Code is indented by four spaces or a tab.</p>
-					<h3>Code span</h3>
-					<p>Use the `printf()` function.</p>
+					<h2>Ordered Lists</h2>
+					<pre><code>
+1. Led Zeppelin
+2. Led Zeppelin II
+3. Led Zeppelin III
+  1. Side A
+  2. Side B
+					</code></pre>
 				</section>
 				<section>
-					<h2>Horizontal Rules</h2>
-					<p>*** or ---</p>
+					<h2>Code Blocks</h2>
+					<pre><code>
+    Code is indented by four spaces or a tab.
+					</code></pre>
 				</section>
 				<section>
-					<h2>Links</h2>
-					<p>This is [an example](http://example.com/ "Title") inline link.</p>
-					<p>[This link](http://example.net/) has no title attribute.</p>
-				</section>
-				<section>
-					<h2>Emphasis</h2>
-					<p>*Italicised*</p>
-					<p>_Italicised_</p>
-					<p>**Bold**</p>
-					<p>__Bold__</p>
-				</section>
-				<section>
-					<h2>Images</h2>
-					<p>![Alt text](/path/to/img.jpg "Optional title")</p>
-				</section>
-			</section>
-			<article id="github">
-				<h1>Github Flavored Markdown</h1>
-				<section>
-					<h2>Headings</h2>
-					<p># This is an H1</p>
-					<p>## This is an H2</p>
-					<p>### This is an H3</p>
-					<p>#### This is an H4</p>
-					<p>##### This is an H5</p>
-					<p>###### This is an H6</p>
-				</section>
-				<section>
-					<h2>Blockquotes</h2>
-					<p>> This is a block quote.</p>
-					<p>>> This is a nested block quote.</p>
-				</section>
-				<section>
-					<h2>Lists</h2>
-					<h3>Unordered</h3>
-					<p>* Red</p>
-					<p>* Blue</p>
-					<p>* Green</p>
-					<p>+ Red</p>
-					<p>+ Blue</p>
-					<p>+ Green</p>
-					<p>- Red</p>
-					<p>- Blue</p>
-					<p>- Green</p>
-					<h3>Ordered</h3>
-					<p>1. Led Zeppelin</p>
-					<p>2. Led Zeppelin II</p>
-					<p>3. Led Zeppelin III</p>
-					<p>4. Led Zeppelin IV</p>
-				</section>
-				<section>
-					<h2>Code</h2>
-					<h3>Code block</h3>
-					<p>    Code is indented by four spaces or a tab.</p>
-					<h3>Code span</h3>
-					<p>Use the `printf()` function.</p>
+					<h2>Code Spans</h2>
+					<pre><code>
+To print Hello world, `print "Hello world"`
+					</code></pre>
 				</section>
 				<section>
 					<h2>Horizontal Rules</h2>
-					<p>*** or ---</p>
+					<pre><code>
+***
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+---
+					</code></pre>
 				</section>
 				<section>
 					<h2>Links</h2>
-					<p>This is [an example](http://example.com/ "Title") inline link.</p>
-					<p>[This link](http://example.net/) has no title attribute.</p>
-				</section>
-				<section>
-					<h2>Emphasis</h2>
-					<p>*Italicised*</p>
-					<p>_Italicised_</p>
-					<p>**Bold**</p>
-					<p>__Bold__</p>
+					<pre><code>
+[Link text](http://link.com/ "Opt. title")
+					</code></pre>
 				</section>
 				<section>
 					<h2>Images</h2>
-					<p>![Alt text](/path/to/img.jpg "Optional title")</p>
+					<pre><code>
+![Alt text](/path/to/img.jpg "Opt. title")
+				</code></pre>
 				</section>
 			</article>
-		</div>
 	</body>
 </html>
