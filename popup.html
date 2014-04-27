@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Markdown Cheatsheet</title>
+		<style type="text/css">
+
+			body {
+				margin: 0;
+				width: 300px;
+				height: 600px;
+				font-size: 62.5%;
+			}
+
+			nav {
+				display: inline;
+
+			}
+
+			.tab {
+				width: 50%;
+				float: left;
+				text-align: center;
+				background-color: grey;
+			}
+
+			.tab a {
+				color: white;
+				text-decoration: none;
+			}
+
+			h1 {
+				font-size: 2em;
+			}
+			h2 {
+				font-size: 1.4em;
+			}
+			h3 {
+				font-size: 1.2em;
+				font-style:	italic;
+			}
+			p {
+				font-size: 1em;
+			}
+
+			article {
+				/*padding: 60px 15 10 15;*/
+				padding-top: 60px;
+				position: absolute;
+				top: 0px;
+				visibility: collapse;
+				z-index: -1;
+
+			}
+
+			article:target {
+				visibility: visible;
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="tabs">
+			<nav>
+				<div class="tab">
+					<h1><a href="#markdown">Markdown</a></h1>
+				</div>
+				<div class="tab">
+					<h1><a href="#github">Github</a></h1>
+				</div>
+			</nav>
+			<article id="markdown">
+				<section>
+					<h2>Headings</h2>
+					<p># This is an H1</p>
+					<p>## This is an H2</p>
+					<p>### This is an H3</p>
+					<p>#### This is an H4</p>
+					<p>##### This is an H5</p>
+					<p>###### This is an H6</p>
+				</section>
+				<section>
+					<h2>Blockquotes</h2>
+					<p>> This is a block quote.</p>
+					<p>>> This is a nested block quote.</p>
+				</section>
+				<section>
+					<h2>Lists</h2>
+					<h3>Unordered</h3>
+					<p>* Red</p>
+					<p>* Blue</p>
+					<p>* Green</p>
+					<p>+ Red</p>
+					<p>+ Blue</p>
+					<p>+ Green</p>
+					<p>- Red</p>
+					<p>- Blue</p>
+					<p>- Green</p>
+					<h3>Ordered</h3>
+					<p>1. Led Zeppelin</p>
+					<p>2. Led Zeppelin II</p>
+					<p>3. Led Zeppelin III</p>
+					<p>4. Led Zeppelin IV</p>
+				</section>
+				<section>
+					<h2>Code</h2>
+					<h3>Code block</h3>
+					<p>    Code is indented by four spaces or a tab.</p>
+					<h3>Code span</h3>
+					<p>Use the `printf()` function.</p>
+				</section>
+				<section>
+					<h2>Horizontal Rules</h2>
+					<p>*** or ---</p>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<p>This is [an example](http://example.com/ "Title") inline link.</p>
+					<p>[This link](http://example.net/) has no title attribute.</p>
+				</section>
+				<section>
+					<h2>Emphasis</h2>
+					<p>*Italicised*</p>
+					<p>_Italicised_</p>
+					<p>**Bold**</p>
+					<p>__Bold__</p>
+				</section>
+				<section>
+					<h2>Images</h2>
+					<p>![Alt text](/path/to/img.jpg "Optional title")</p>
+				</section>
+			</section>
+			<article id="github">
+				<h1>Github Flavored Markdown</h1>
+				<section>
+					<h2>Headings</h2>
+					<p># This is an H1</p>
+					<p>## This is an H2</p>
+					<p>### This is an H3</p>
+					<p>#### This is an H4</p>
+					<p>##### This is an H5</p>
+					<p>###### This is an H6</p>
+				</section>
+				<section>
+					<h2>Blockquotes</h2>
+					<p>> This is a block quote.</p>
+					<p>>> This is a nested block quote.</p>
+				</section>
+				<section>
+					<h2>Lists</h2>
+					<h3>Unordered</h3>
+					<p>* Red</p>
+					<p>* Blue</p>
+					<p>* Green</p>
+					<p>+ Red</p>
+					<p>+ Blue</p>
+					<p>+ Green</p>
+					<p>- Red</p>
+					<p>- Blue</p>
+					<p>- Green</p>
+					<h3>Ordered</h3>
+					<p>1. Led Zeppelin</p>
+					<p>2. Led Zeppelin II</p>
+					<p>3. Led Zeppelin III</p>
+					<p>4. Led Zeppelin IV</p>
+				</section>
+				<section>
+					<h2>Code</h2>
+					<h3>Code block</h3>
+					<p>    Code is indented by four spaces or a tab.</p>
+					<h3>Code span</h3>
+					<p>Use the `printf()` function.</p>
+				</section>
+				<section>
+					<h2>Horizontal Rules</h2>
+					<p>*** or ---</p>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<p>This is [an example](http://example.com/ "Title") inline link.</p>
+					<p>[This link](http://example.net/) has no title attribute.</p>
+				</section>
+				<section>
+					<h2>Emphasis</h2>
+					<p>*Italicised*</p>
+					<p>_Italicised_</p>
+					<p>**Bold**</p>
+					<p>__Bold__</p>
+				</section>
+				<section>
+					<h2>Images</h2>
+					<p>![Alt text](/path/to/img.jpg "Optional title")</p>
+				</section>
+			</article>
+		</div>
+	</body>
+</html>
