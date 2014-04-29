@@ -4,6 +4,7 @@
   "name": "Markdown Cheatsheet",
   "description": "This extension displays information on Markdown & Github-flavored Markdown syntax.",
   "version": "1.0",
+  "content_scripts": [{"js": ["tabs.js"]}],
 
   "browser_action": {
     "default_icon": "icon.png",

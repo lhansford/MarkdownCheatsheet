@@ -11,20 +11,6 @@
 				font-size: 75%;
 			}
 
-			.tab {
-				width: 50%;
-				height: 50px;
-				float: left;
-				text-align: center;
-				background-color: grey;
-				margin-bottom: 15px;
-			}
-
-			.tab a {
-				color: white;
-				text-decoration: none;
-			}
-
 			h1 {
 				font-size: 2em;
 			}
@@ -53,16 +39,37 @@
 				margin: 0;
 			}
 
+			.tabNav{
+				margin: 0px;
+				height: 50px;
+				list-style: none;
+				background-color: grey;
+			}
+
+			.tabNav li {
+				float: left;
+				padding-top: 15px;
+				margin-right: 10px;
+			}
+
+			.tabNav a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.tabNav :first-child {
+				background-color: white;
+				color: black;
+			}
+
 		</style>
+		<script type="text/javascript" src="tabs.js"></script>
 	</head>
 	<body>
-		
-			<div class="tab">
-				<h1><a href="#markdown">Markdown</a></h1>
-			</div>
-			<div class="tab">
-				<h1><a href="#github">Github</a></h1>
-			</div>
+      <ul class="tabNav">
+          <li><a href="#" id="tab1">Standard Markdown</a></li>
+          <li><a href="#" id="tab2">Github Flavored Markdown</a></li>
+      </ul>
 			<article id="markdown">
 				<section>
 					<h2>Headings</h2>
@@ -170,5 +177,113 @@ To print Hello world, `print "Hello world"`
 				</code></pre>
 				</section>
 			</article>
+			<article id="github">
+				<section>
+					<h2>Headings</h2>
+					<pre><code>
+# Heading 1poopo
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+					</code></pre>
+				</section>
+				<section>
+					<h2>Italics</h2>
+					<pre><code>
+*Italicised*
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+_Italicised_
+					</code></pre>
+				</section>
+				<section>
+					<h2>Bold</h2>
+					<pre><code>
+**Bold**
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+__Bold__
+					</code></pre>
+				</section>
+				<section>
+					<h2>Blockquotes</h2>
+					<pre><code>
+> This is a block quote.
+>> This is a nested block quote.
+					</code></pre>
+				</section>
+				<section>
+					<h2>Unordered Lists</h2>
+					<pre><code>
+* Gibson
+* Fender
+  * Stratocaster
+  * Telecaster
+					</code></pre>
+					<p>or</p>
+					<pre><code>
++ Gibson
++ Fender
+  + Stratocaster
+  + Telecaster
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+- Gibson
+- Fender
+  - Stratocaster
+  - Telecaster
+					</code></pre>
+				</section>
+				<section>
+					<h2>Ordered Lists</h2>
+					<pre><code>
+1. Led Zeppelin
+2. Led Zeppelin II
+3. Led Zeppelin III
+  1. Side A
+  2. Side B
+					</code></pre>
+				</section>
+				<section>
+					<h2>Code Blocks</h2>
+					<pre><code>
+    Code is indented by four spaces or a tab.
+					</code></pre>
+				</section>
+				<section>
+					<h2>Code Spans</h2>
+					<pre><code>
+To print Hello world, `print "Hello world"`
+					</code></pre>
+				</section>
+				<section>
+					<h2>Horizontal Rules</h2>
+					<pre><code>
+***
+					</code></pre>
+					<p>or</p>
+					<pre><code>
+---
+					</code></pre>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<pre><code>
+[Link text](http://link.com/ "Opt. title")
+					</code></pre>
+				</section>
+				<section>
+					<h2>Images</h2>
+					<pre><code>
+![Alt text](/path/to/img.jpg "Opt. title")
+				</code></pre>
+				</section>
+			</article>
+		</div>
 	</body>
 </html>
