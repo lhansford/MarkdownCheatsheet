@@ -41,25 +41,35 @@
 
 			.tabNav{
 				margin: 0px;
-				height: 50px;
+				padding: 0px;
+				height: 40px;
 				list-style: none;
 				background-color: grey;
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 14px;
 			}
 
 			.tabNav li {
 				float: left;
-				padding-top: 15px;
-				margin-right: 10px;
+				width: 50%;
+				height: 40px;
+				box-sizing: border-box;
+				text-align: center;
+				padding-top: 10px;
+				border: 1px white solid;
 			}
 
 			.tabNav a {
 				text-decoration: none;
 				color: white;
+				padding-top: 15px;
 			}
 
-			.tabNav :first-child {
-				background-color: white;
-				color: black;
+			.active-tab {
+				background-color: blue;
+			}
+			.active-tab a {
+				color: white;
 			}
 
 		</style>
@@ -67,8 +77,8 @@
 	</head>
 	<body>
       <ul class="tabNav">
-          <li><a href="#" id="tab1">Standard Markdown</a></li>
-          <li><a href="#" id="tab2">Github Flavored Markdown</a></li>
+          <li class="active-tab"><a href="#" id="tab1">Standard</a></li>
+          <li><a href="#" id="tab2">Github Flavored</a></li>
       </ul>
 			<article id="markdown">
 				<section>
