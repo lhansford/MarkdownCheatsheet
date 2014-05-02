@@ -15,4 +15,5 @@ window.onload = function(){
 	document.getElementById("markdown").style.display = 'none';
 	document.getElementById("tab1").addEventListener("click",showNormal);
 	document.getElementById("tab2").addEventListener("click",showGithub);
+	showNormal();
 }
