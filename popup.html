@@ -61,28 +61,22 @@
 				box-sizing: border-box;
 				text-align: center;
 				padding-top: 12px;
-			}
-
-			.tabNav a {
-				text-decoration: none;
 				color: #888;
+				cursor: pointer;
 			}
 
 			.active-tab {
 				background-color: #2B93FF;
-			}
-			.active-tab a {
-				color: #fff;
+				color: #fff !important;
 			}
 
 		</style>
-		<script type="text/javascript" src="tabs.js"></script>
 	</head>
 	<body>
 		<nav>
       <ul class="tabNav">
-          <li class="active-tab"><a href="" id="tab1">Standard</a></li>
-          <li><a href="" id="tab2">Github Flavored</a></li>
+        <li class="active-tab" id="tab1">Standard</li>
+        <li id="tab2">Github Flavored</li>
       </ul>
     </nav>
 			<article id="markdown">
@@ -330,5 +324,6 @@ if language == 'python':
 				</section>
 			</article>
 		</div>
+	<script type="text/javascript" src="tabs.js"></script>
 	</body>
 </html>
