@@ -1,5 +1,4 @@
 function showNormal(){
-	console.log('norm');
 	document.getElementById("markdown").style.display = 'block';
 	document.getElementById("github").style.display = 'none';
 	document.getElementById("tab1").className = 'active-tab'
@@ -7,7 +6,6 @@ function showNormal(){
 }
 
 function showGithub(){
-	console.log('git');
 	document.getElementById("github").style.display = 'block';
 	document.getElementById("markdown").style.display = 'none';
 	document.getElementById("tab1").className = ''
@@ -18,5 +16,4 @@ window.onload = function(){
 	document.getElementById("markdown").style.display = 'none';
 	document.getElementById("tab1").addEventListener("click", showNormal);
 	document.getElementById("tab2").addEventListener("click", showGithub);
-	// showNormal();
 }
